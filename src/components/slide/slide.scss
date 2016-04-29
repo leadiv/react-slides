@@ -1,0 +1,25 @@
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide__title {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #262626;
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 3rem;
+}
+
+.slide__header {
+  padding: .5rem;
+}
+
+.slide__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .5rem;
+  text-align: right;  
+}
