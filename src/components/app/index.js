@@ -9,17 +9,32 @@ class App extends Component {
     render() {
         return (
             <Presentation>
+                {/* Introduction slides */}
                 <Slide title="What is ReactJS?">
-                    <BulletPoint>Hello this will be a simple slide presentation app when done.</BulletPoint>
-                    <BulletPoint>A tag is just a tag</BulletPoint>
+                    <BulletPoint>A generic way to create UI build blocks -- kind of like legos.</BulletPoint>
+                    <BulletPoint>Each building block (component) has exactally what it needs.</BulletPoint>
                 </Slide>
-                <Slide title="V is for View">
-                    <BulletPoint>Hello this will be a simple slide presentation app when done.</BulletPoint>
-                    <BulletPoint>A tag is just a tag</BulletPoint>
+                <Slide title="The V in MVC">
+                    <BulletPoint>Templating language?</BulletPoint>
+                    <BulletPoint>Framework vs library?</BulletPoint>
+                    <BulletPoint>Hold over till web components?</BulletPoint>
                 </Slide>
                 <Slide title="Why Use ReactJS?">
-                    <BulletPoint>Thinking in modularity</BulletPoint>
-                    <BulletPoint>Flexiblity</BulletPoint>
+                    <BulletPoint>Thinking in modularity.</BulletPoint>
+                    <BulletPoint>Able to work with other frameworks and libraries.</BulletPoint>
+                    <BulletPoint>Performance optimizations.</BulletPoint>
+                    <BulletPoint>Enforces UI and workflow patterns.</BulletPoint>
+                    <BulletPoint>Easy to reason about your UI code and logic.</BulletPoint>
+                </Slide>
+                <Slide title="Challenges in using ReactJS">
+                    <BulletPoint>ReactJS alone can not be used to create an application.</BulletPoint>
+                    <BulletPoint>Learning lots of new tools.</BulletPoint>
+                    <BulletPoint>Setup and structure.</BulletPoint>
+                </Slide>
+                {/* Basics */}
+                <Slide title="Anatomy of a Component">
+                    <BulletPoint>The most basic form is an object with some sort of render function.</BulletPoint>
+                    <BulletPoint>TODO: CODE EXAMPLE HERE</BulletPoint>
                 </Slide>
             </Presentation>
         );
