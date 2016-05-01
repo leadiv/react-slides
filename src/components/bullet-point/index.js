@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
+require('./bullet-point.scss');
+
 class BulletPoint extends Component {
     render() {
         return (
