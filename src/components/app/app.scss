@@ -5,6 +5,12 @@ body, html {
   height: 100%;
 }
 
+@media (min-width:1100px) {
+    body, html {
+        font-size: 200%;
+    }
+}
+
 body {
   font-family: Roboto;
   font-weight: 300;
@@ -21,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
   font-size: 1.2rem;
+  padding-left: 2rem;
 }
 
 li + li {
