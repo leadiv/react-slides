@@ -37,4 +37,3 @@ open http://localhost:3000
 * <a href="https://facebook.github.io/react/docs/component-specs.html">React Lifecycle Method Documentation</a>
 * <a href="https://facebook.github.io/react/docs/getting-started.html">Full Documentation</a>
 * <a href="https://github.com/gaearon/react-hot-boilerplate">React Hot Boilerplate</a>
-* <a href="https://github.com/leadiv/react-slides">The Repository For This Presentation</a>
