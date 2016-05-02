@@ -11,6 +11,7 @@ class App extends Component {
         return (
             <Presentation>
                 {/* Introduction slides */}
+                <Slide title="ReactJS"></Slide>
                 <Slide title="What is ReactJS?">
                     <BulletPoint>A generic way to create UI build blocks -- kind of like legos.</BulletPoint>
                     <BulletPoint>Each building block (component) has exactally what it needs.</BulletPoint>
@@ -27,7 +28,7 @@ class App extends Component {
                     <BulletPoint>Enforces UI and workflow patterns.</BulletPoint>
                     <BulletPoint>Easy to reason about your UI code and logic.</BulletPoint>
                 </Slide>
-                <Slide title="Challenges in using ReactJS">
+                <Slide title="Challenges in Using ReactJS">
                     <BulletPoint>ReactJS alone can not be used to create an application.</BulletPoint>
                     <BulletPoint>Learning lots of new tools.</BulletPoint>
                     <BulletPoint>Setup and structure.</BulletPoint>
@@ -35,6 +36,54 @@ class App extends Component {
                 {/* Basics */}
                 <Slide title="Anatomy of a Component">
                     <CodeBlock source="/src/components/bullet-point/index.js" />
+                </Slide>
+                <Slide title="Isn't That Code Example Doing It Wrong?">
+                    <BulletPoint>Why keep HTML, Javascript and CSS all together?</BulletPoint>
+                    <BulletPoint>Separation of concerns is around presentation and data management.</BulletPoint>
+                    <BulletPoint>Source of truth for the code.</BulletPoint>
+                </Slide>
+                <Slide title="Component Props">
+                    <BulletPoint>Data passed in through parent.</BulletPoint>
+                    <BulletPoint>Props can not be changed from within the component.</BulletPoint>
+                    <BulletPoint>Similar to HTML attributes.</BulletPoint>
+                    <BulletPoint>Default props can be set and types of the props defined</BulletPoint>
+                </Slide>
+                <Slide title="Component State">
+                    <BulletPoint>Private data mangaged by the component.</BulletPoint>
+                    <BulletPoint>State can change over time from within the component.</BulletPoint>
+                    <BulletPoint>Best practices is to use <em>sparingly</em>.</BulletPoint>
+                </Slide>
+                <Slide title="Lifecycle Methods">
+                    <BulletPoint>Methods called during the creation, manipulation and deletion of a component.</BulletPoint>
+                    <BulletPoint>Mounting: componentWillMount, componentDidMount</BulletPoint>
+                    <BulletPoint>Updating: shouldComponentUpdate, componentWillUpdate, componentDidUpdate</BulletPoint>
+                    <BulletPoint>Unmounting: componentWillUnmount</BulletPoint>
+                </Slide>
+                <Slide title="Render">
+                    <BulletPoint>All components must have a render function</BulletPoint>
+                    <BulletPoint>Re-render everything makes everything simple.</BulletPoint>
+                    <BulletPoint>Virtual DOM helps keeps render fast.</BulletPoint>
+                    <BulletPoint>The Virtual DOM is not the same thing as Shadow DOM.</BulletPoint>
+                </Slide>
+                <Slide title="Component Communication">
+                    <BulletPoint>What is Flux?</BulletPoint>
+                    <BulletPoint>Unidirectional data flow: props flow down and events flow up.</BulletPoint>
+                    <BulletPoint>Views dispatch actions.</BulletPoint>
+                    <BulletPoint>An action describles the change with the minimum amount of information needed.</BulletPoint>
+                    <BulletPoint>The store responses to dispatched actions.</BulletPoint>
+                    <BulletPoint>The store will emit a change event.</BulletPoint>
+                    <BulletPoint>The view listens to changes in the store.</BulletPoint>
+                    <BulletPoint>The politics app uses react-redux as our flux library</BulletPoint>
+                </Slide>
+                <Slide title="Questions and More Resources">
+                    <BulletPoint><a href="http://blog.andrewray.me/reactjs-for-stupid-people/">React For Stupid People</a></BulletPoint>
+                    <BulletPoint><a href="http://blog.andrewray.me/flux-for-stupid-people/">Flux For Stupid People</a></BulletPoint>
+                    <BulletPoint><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">Removing User Interface Complexity, or Why React is Awesome</a></BulletPoint>
+                    <BulletPoint><a href="https://facebook.github.io/react/docs/thinking-in-react.html">Thinking In React</a></BulletPoint>
+                    <BulletPoint><a href="https://facebook.github.io/react/docs/component-specs.html">React Lifecycle Method Documentation</a></BulletPoint>
+                    <BulletPoint><a href="https://facebook.github.io/react/docs/getting-started.html">Full Documentation</a></BulletPoint>
+                    <BulletPoint><a href="https://github.com/gaearon/react-hot-boilerplate">React Hot Boilerplate</a></BulletPoint>
+                    <BulletPoint><a href="https://github.com/leadiv/react-slides">The Repository For This Presentation</a></BulletPoint>
                 </Slide>
             </Presentation>
         );
