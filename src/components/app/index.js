@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Slide from '../slide';
 import BulletPoint from '../bullet-point';
 import Presentation from '../../containers/presentation';
+import CodeBlock from '../../containers/code-block';
 
 require('./app.scss');
 
@@ -33,8 +34,7 @@ class App extends Component {
                 </Slide>
                 {/* Basics */}
                 <Slide title="Anatomy of a Component">
-                    <BulletPoint>The most basic form is an object with some sort of render function.</BulletPoint>
-                    <BulletPoint>TODO: CODE EXAMPLE HERE</BulletPoint>
+                    <CodeBlock source="/src/components/bullet-point/index.js" />
                 </Slide>
             </Presentation>
         );
