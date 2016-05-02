@@ -1,0 +1,16 @@
+.code-block.is-error {
+    background-color: rgba(255, 182, 193, .3);
+    min-height: 4rem;
+    line-height: 4rem;
+}
+
+.code-block.is-error:before {
+    content: 'Error Loading Code Sample :(';
+    display: block;
+    text-align: center;
+}
+
+.code-block {
+    max-height: 22rem;
+    overflow-x: scroll;
+}
