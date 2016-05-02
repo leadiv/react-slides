@@ -33,14 +33,31 @@ class App extends Component {
                     <BulletPoint>Learning lots of new tools.</BulletPoint>
                     <BulletPoint>Setup and structure.</BulletPoint>
                 </Slide>
-                {/* Basics */}
                 <Slide title="Anatomy of a Component">
                     <CodeBlock source="/src/components/bullet-point/index.js" />
+                </Slide>
+                <Slide title="Usage of a Component">
+                    <BulletPoint>Component Code</BulletPoint>
+                    <CodeBlock source="/src/examples/bullet-point-usage.js" />
+                    <BulletPoint>Rendered HTML</BulletPoint>
+                    <CodeBlock source="/src/examples/bullet-point-rendered.txt" />
                 </Slide>
                 <Slide title="Isn't That Code Example Doing It Wrong?">
                     <BulletPoint>Why keep HTML, Javascript and CSS all together?</BulletPoint>
                     <BulletPoint>Separation of concerns is around presentation and data management.</BulletPoint>
                     <BulletPoint>Source of truth for the code.</BulletPoint>
+                </Slide>
+                <Slide title="JSX">
+                    <BulletPoint>Is an optional HTML-like syntax to create JavaScript objects.</BulletPoint>
+                    <BulletPoint>It is possible to use React's createElement to generate the HTML but JSX tends to be easier to read.</BulletPoint>
+                    <BulletPoint>With out JSX:</BulletPoint>
+                    <CodeBlock>
+                        {`React.createElement(\n    'a',\n    {href: 'https://facebook.github.io/react/', style: {color: '#f00'}, className="red-link"},\n    'Hello!'\n)`}
+                    </CodeBlock>
+                    <BulletPoint>With JSX:</BulletPoint>
+                    <CodeBlock>
+                        {`<a className="red-link" href="https://facebook.github.io/react/" style={{color: '#f00'}}>\n    Hello!\n</a>`}
+                    </CodeBlock>
                 </Slide>
                 <Slide title="Component Props">
                     <BulletPoint>Data passed in through parent.</BulletPoint>
@@ -48,15 +65,21 @@ class App extends Component {
                     <BulletPoint>Similar to HTML attributes.</BulletPoint>
                     <BulletPoint>Default props can be set and types of the props defined</BulletPoint>
                 </Slide>
+                <Slide title="Props in action">
+                    <CodeBlock source="/src/examples/slide.txt" />
+                </Slide>
                 <Slide title="Component State">
                     <BulletPoint>Private data mangaged by the component.</BulletPoint>
                     <BulletPoint>State can change over time from within the component.</BulletPoint>
                     <BulletPoint>Best practices is to use <em>sparingly</em>.</BulletPoint>
                 </Slide>
+                <Slide title="State in action">
+                    <CodeBlock source="/src/examples/state.txt" />
+                </Slide>
                 <Slide title="Lifecycle Methods">
                     <BulletPoint>Methods called during the creation, manipulation and deletion of a component.</BulletPoint>
                     <BulletPoint>Mounting: componentWillMount, componentDidMount</BulletPoint>
-                    <BulletPoint>Updating: shouldComponentUpdate, componentWillUpdate, componentDidUpdate</BulletPoint>
+                    <BulletPoint>Updating: componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, componentDidUpdate</BulletPoint>
                     <BulletPoint>Unmounting: componentWillUnmount</BulletPoint>
                 </Slide>
                 <Slide title="Render">

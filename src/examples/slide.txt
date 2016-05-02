@@ -1,0 +1,18 @@
+class Slide extends Component {
+    render() {
+        return (
+            <div className="slide">
+                <h1 className="slide__title">{this.props.title}</h1>
+                // more code for rest of slide here...
+            </div>
+        );
+    }
+}
+
+Slide.propTypes = {
+    title: PropTypes.string
+};
+
+Slide.defaultProps = {
+    title: 'Add Awesome Title Here'
+};

@@ -1,0 +1,19 @@
+class HideText extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShown: true
+        }
+        this.hideMe = this.hideMe.bind(this);
+    }
+
+    hideMe() {
+        this.setState({isShown: false});
+    }
+
+    render() {
+        return (
+            this.state.isShown ? <div onClick={this.hideMe}>{this.props.label}</div> : null
+        );
+    }
+}
