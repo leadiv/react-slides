@@ -1,6 +1,6 @@
 {
   "name": "react-slides",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple presentation slide system build in ReactJS.",
   "scripts": {
     "start": "node server.js",
