@@ -1,9 +1,10 @@
-import React, { Component, PropTypes } from 'react';
 
-require('./bullet-point.scss');
+import React, { Component, PropTypes } from 'react'; /** ES6 import **/
 
-class BulletPoint extends Component {
-    render() {
+require('./bullet-point.scss');                      /** webpack require **/
+
+class BulletPoint extends Component {                /** ES6 Classes **/
+    render() {                                       /** React render **/
         return (
             <li className="bullet-point">
                 {this.props.children}
@@ -16,4 +17,4 @@ BulletPoint.PropTypes = {
     children: PropTypes.node
 }
 
-export default BulletPoint;
+export default BulletPoint;                         /** ES6 export **/

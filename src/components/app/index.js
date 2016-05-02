@@ -14,7 +14,7 @@ class App extends Component {
                 <Slide title="ReactJS"></Slide>
                 <Slide title="What is ReactJS?">
                     <BulletPoint>A generic way to create UI build blocks -- kind of like legos.</BulletPoint>
-                    <BulletPoint>Each building block (component) has exactally what it needs.</BulletPoint>
+                    <BulletPoint>Each building block (component) has exactly what it needs.</BulletPoint>
                 </Slide>
                 <Slide title="The V in MVC">
                     <BulletPoint>Templating language?</BulletPoint>
