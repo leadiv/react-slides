@@ -81,6 +81,9 @@ class App extends Component {
                     <BulletPoint>Mounting: componentWillMount, componentDidMount</BulletPoint>
                     <BulletPoint>Updating: componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, componentDidUpdate</BulletPoint>
                     <BulletPoint>Unmounting: componentWillUnmount</BulletPoint>
+                    <BulletPoint>Mounting methods are useful for setting up custom event listeners.</BulletPoint>
+                    <BulletPoint>Updating methods are great at having greater control of how and when the component updates.</BulletPoint>
+                    <BulletPoint>Unmounting methods are useful for cleaning up after your module gets removed.</BulletPoint>
                 </Slide>
                 <Slide title="Render">
                     <BulletPoint>All components must have a render function</BulletPoint>
@@ -89,14 +92,8 @@ class App extends Component {
                     <BulletPoint>The Virtual DOM is not the same thing as Shadow DOM.</BulletPoint>
                 </Slide>
                 <Slide title="Component Communication">
-                    <BulletPoint>What is Flux?</BulletPoint>
                     <BulletPoint>Unidirectional data flow: props flow down and events flow up.</BulletPoint>
-                    <BulletPoint>Views dispatch actions.</BulletPoint>
-                    <BulletPoint>An action describles the change with the minimum amount of information needed.</BulletPoint>
-                    <BulletPoint>The store responses to dispatched actions.</BulletPoint>
-                    <BulletPoint>The store will emit a change event.</BulletPoint>
-                    <BulletPoint>The view listens to changes in the store.</BulletPoint>
-                    <BulletPoint>The politics app uses react-redux as our flux library</BulletPoint>
+                    <BulletPoint>Similar to a Pub/Sub model.</BulletPoint>
                 </Slide>
                 <Slide title="Questions and More Resources">
                     <BulletPoint><a href="http://blog.andrewray.me/reactjs-for-stupid-people/">React For Stupid People</a></BulletPoint>
