@@ -23,5 +23,19 @@ class Slide extends Component {
     }
 }
 
-export default Slide;
+Slide.propTypes = {
+    isActive: PropTypes.bool,
+    title: PropTypes.string,
+    order: PropTypes.number,
+    total: PropTypes.number,
+    children: PropTypes.node
+};
 
+Slide.defaultProps = {
+    isActive: false,
+    title: '',
+    order: 0,
+    total: 0
+};
+
+export default Slide;

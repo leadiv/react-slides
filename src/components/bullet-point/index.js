@@ -12,4 +12,8 @@ class BulletPoint extends Component {
     }
 }
 
+BulletPoint.PropTypes = {
+    children: PropTypes.node
+}
+
 export default BulletPoint;
