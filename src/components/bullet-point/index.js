@@ -13,5 +13,3 @@ class BulletPoint extends Component {
 }
 
 export default BulletPoint;
-
-
