@@ -98,6 +98,7 @@ class App extends Component {
                 <Slide title="Questions and More Resources">
                     <BulletPoint><a href="http://blog.andrewray.me/reactjs-for-stupid-people/">React For Stupid People</a></BulletPoint>
                     <BulletPoint><a href="http://blog.andrewray.me/flux-for-stupid-people/">Flux For Stupid People</a></BulletPoint>
+                    <BulletPoint><a href="https://github.com/petehunt/react-howto">React How To</a></BulletPoint>
                     <BulletPoint><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">Removing User Interface Complexity, or Why React is Awesome</a></BulletPoint>
                     <BulletPoint><a href="https://facebook.github.io/react/docs/thinking-in-react.html">Thinking In React</a></BulletPoint>
                     <BulletPoint><a href="https://facebook.github.io/react/docs/component-specs.html">React Lifecycle Method Documentation</a></BulletPoint>
