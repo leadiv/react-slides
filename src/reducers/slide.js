@@ -6,12 +6,12 @@ import {
     SLIDE_ADD
 } from '../actions/slide';
 
-const initalState = {
+const initialState = {
     current: 0,
     total: 0
 };
 
-function slide(state = initalState, action) {
+function slide(state = initialState, action) {
     switch (action.type) {
         case SLIDE_ADD:
             return Object.assign({}, state, {
