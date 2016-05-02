@@ -83,7 +83,7 @@ class App extends Component {
                     <BulletPoint>Unmounting: componentWillUnmount</BulletPoint>
                     <BulletPoint>Mounting methods are useful for setting up custom event listeners.</BulletPoint>
                     <BulletPoint>Updating methods are great at having greater control of how and when the component updates.</BulletPoint>
-                    <BulletPoint>Unmounting methods are useful for cleaning up after your module gets removed.</BulletPoint>
+                    <BulletPoint>Unmounting methods are useful for cleaning up after your component gets removed.</BulletPoint>
                 </Slide>
                 <Slide title="Render">
                     <BulletPoint>All components must have a render function</BulletPoint>
